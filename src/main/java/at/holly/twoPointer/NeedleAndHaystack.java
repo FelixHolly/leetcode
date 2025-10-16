@@ -1,5 +1,6 @@
 package at.holly.twoPointer;
 
+//https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/?envType=problem-list-v2&envId=two-pointers
 public class NeedleAndHaystack {
 
     public static void main(String[] args) {
@@ -10,6 +11,7 @@ public class NeedleAndHaystack {
         System.out.println(needleAndHaystack.strStr("saabutsad", "sad"));
         System.out.println(needleAndHaystack.strStr("aaa", "aaaa"));
         System.out.println(needleAndHaystack.strStr("mississippi", "issip"));
+        System.out.println(needleAndHaystack.strStr2("mississippi", "issip"));
     }
 
     public int strStr(String haystack, String needle) {
@@ -26,6 +28,21 @@ public class NeedleAndHaystack {
                 needlePointer++;
             }
             if (needlePointer == needleLength) return hayPointer;
+        }
+        return -1;
+    }
+
+    public int strStr1(String haystack, String needle) {
+        return haystack.indexOf(needle);
+    }
+
+    public int strStr2(String haystack, String needle) {
+        if (needle.length() > haystack.length()) return -1;
+
+        for (int i = 0; i < haystack.length() - needle.length(); i++) {
+            if (haystack.startsWith(needle, i)){
+                return i;
+            }
         }
         return -1;
     }
