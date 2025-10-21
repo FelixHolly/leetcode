@@ -1,4 +1,4 @@
-package at.holly.twoPointer;
+package at.holly.twoPointer.easy;
 
 //https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/?envType=problem-list-v2&envId=two-pointers
 public class NeedleAndHaystack {

@@ -1,5 +1,6 @@
 package at.holly.twoPointer;
 
+import at.holly.twoPointer.easy.LinkedListCycle;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

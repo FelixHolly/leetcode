@@ -1,4 +1,4 @@
-package at.holly.twoPointer;
+package at.holly.twoPointer.easy;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package at.holly.twoPointer;
+package at.holly.twoPointer.easy;
 
 
 //https://leetcode.com/problems/longest-palindromic-substring/?envType=problem-list-v2&envId=two-pointers
